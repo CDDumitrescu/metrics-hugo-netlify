@@ -2,10 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://adoring-blackwell-38249a.netlify.app//categories/</loc>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://adoring-blackwell-38249a.netlify.app//</loc>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://adoring-blackwell-38249a.netlify.app//products/product-0/</loc>
+  </url><url>
+    <loc>https://adoring-blackwell-38249a.netlify.app//products/product-1/</loc>
+  </url><url>
+    <loc>https://adoring-blackwell-38249a.netlify.app//products/product-2/</loc>
+  </url><url>
+    <loc>https://adoring-blackwell-38249a.netlify.app//products/product-3/</loc>
+  </url><url>
+    <loc>https://adoring-blackwell-38249a.netlify.app//products/product-4/</loc>
+  </url><url>
+    <loc>https://adoring-blackwell-38249a.netlify.app//products/product-5/</loc>
+  </url><url>
+    <loc>https://adoring-blackwell-38249a.netlify.app//products/product-6/</loc>
+  </url><url>
+    <loc>https://adoring-blackwell-38249a.netlify.app//products/product-7/</loc>
+  </url><url>
+    <loc>https://adoring-blackwell-38249a.netlify.app//products/product-8/</loc>
+  </url><url>
+    <loc>https://adoring-blackwell-38249a.netlify.app//products/product-9/</loc>
+  </url><url>
+    <loc>https://adoring-blackwell-38249a.netlify.app//products/</loc>
+  </url><url>
+    <loc>https://adoring-blackwell-38249a.netlify.app//tags/</loc>
   </url>
 </urlset>

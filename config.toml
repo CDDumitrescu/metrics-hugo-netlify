@@ -2,3 +2,4 @@ baseURL = 'https://adoring-blackwell-38249a.netlify.app//'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "tale"
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
