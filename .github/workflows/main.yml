@@ -31,11 +31,20 @@ jobs:
       # Run Hugo
       - name: Build HUGO site
         run: hugo
-  lighthouse:
-    runs-on: ubuntu-latest
-    steps:
+      # Wait for the Netlify preview
+      - name: Wait for the Netlify Preview
+        uses: jakepartusch/wait-for-netlify-action@v1
+        id: netlify
+        with:
+          site_name: 'adoring-blackwell-38249a'
+      # Audit URLs using Lighthouse
       - name: Lighthouse CI Action
         uses: treosh/lighthouse-ci-action@v8
         with:
-          urls: "https://adoring-blackwell-38249a.netlify.app//products/product-0/"
-          uploadArtifacts: true
+          urls: |
+            $ {{ steps.netlify.outputs.url }}
+            $ {{ steps.netlify.outputs.url }}/products/product-0/
+            # "https://adoring-blackwell-38249a.netlify.app//products/product-0/"
+          budgetPath: ./budget/json # test performance budgets
+          uploadArtifacts: true # save results as an action artifacts
+          temporaryPublicStorage: true # upload lighthouse report to a temporary storage
