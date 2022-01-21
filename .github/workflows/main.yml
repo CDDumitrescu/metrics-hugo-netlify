@@ -35,5 +35,5 @@ jobs:
       - uses: jsmrcaga/action-netlify-deploy@v1.7.2
         with:
           # Auth token to use with netlify
-          NETLIFY_AUTH_TOKEN: METRICS-NETLIFY-AUTH-TOKEN
+          NETLIFY_AUTH_TOKEN: ${{ secrets.METRICS_NETLIFY_AUTH_TOKEN }}
       
