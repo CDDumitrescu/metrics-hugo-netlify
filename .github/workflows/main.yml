@@ -31,10 +31,3 @@ jobs:
       # Run Hugo
       - name: Build HUGO site
         run: hugo
-      # Deploy to netlify
-      - uses: jsmrcaga/action-netlify-deploy@v1.7.2
-        with:
-          # Auth token to use with netlify
-          NETLIFY_AUTH_TOKEN: ${{ secrets.METRICS_NETLIFY_AUTH_TOKEN }}
-          NETLIFY_DEPLOY_TO_PROD: true
-      
