@@ -38,3 +38,5 @@ jobs:
     steps:
       - name: Lighthouse CI Action
         uses: treosh/lighthouse-ci-action@v8
+        with:
+          urls: "https://adoring-blackwell-38249a.netlify.app//products/product-0/"
