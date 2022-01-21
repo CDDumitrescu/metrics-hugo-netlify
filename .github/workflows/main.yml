@@ -29,7 +29,8 @@ jobs:
         with:
           extended: true
       # Run Hugo
-      - uses: kevvurs/action-hugo@v1.0-rc2
+      - name: Build HUGO site
+        run: hugo
       # Deploy to netlify
       - uses: jsmrcaga/action-netlify-deploy@v1.7.2
         with:
