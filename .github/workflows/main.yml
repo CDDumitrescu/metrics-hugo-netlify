@@ -36,4 +36,5 @@ jobs:
         with:
           # Auth token to use with netlify
           NETLIFY_AUTH_TOKEN: ${{ secrets.METRICS_NETLIFY_AUTH_TOKEN }}
+          NETLIFY_DEPLOY_TO_PROD: true
       
