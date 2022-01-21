@@ -38,6 +38,6 @@ jobs:
           urls: |
             https://adoring-blackwell-38249a.netlify.app/
             https://adoring-blackwell-38249a.netlify.app//products/product-0/
-          budgetPath: ./budget/json # test performance budgets
+          budgetPath: ./budget.json # test performance budgets
           uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to a temporary storage
