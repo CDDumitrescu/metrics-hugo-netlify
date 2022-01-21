@@ -7,6 +7,26 @@
           "budget": 500
         },
         {
+          "metric": "first-contentful-paint",
+          "budget": 500
+        },
+        {
+          "metric": "max-potential-fid",
+          "budget": 500
+        },
+        {
+          "metric": "speed-inded",
+          "budget": 500
+        },
+        {
+          "metric": "largest-contentful-paint",
+          "budget": 500
+        },
+        {
+          "metric": "cumulative-layout-shift",
+          "budget": 500
+        },
+        {
           "metric": "first-meaningful-paint",
           "budget": 500
         }
