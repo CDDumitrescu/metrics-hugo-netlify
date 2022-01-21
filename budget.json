@@ -1,10 +1,10 @@
 [
     {
-      "path": "/",
+      "path": "/*",
       "timings": [
         {
           "metric": "interactive",
-          "budget": 2000
+          "budget": 1000
         },
         {
           "metric": "first-contentful-paint",
@@ -12,47 +12,20 @@
         },
         {
           "metric": "max-potential-fid",
-          "budget": 200
-        },
-        {
-          "metric": "speed-index",
-          "budget": 1500
-        },
-        {
-          "metric": "largest-contentful-paint",
-          "budget": 1100
-        },
-        {
-          "metric": "cumulative-layout-shift",
           "budget": 100
         },
         {
-          "path": "/products/*",
-          "timings": [
-            {
-              "metric": "interactive",
-              "budget": 1000
-            },
-            {
-              "metric": "first-contentful-paint",
-              "budget": 800
-            },
-            {
-              "metric": "max-potential-fid",
-              "budget": 200
-            },
-            {
-              "metric": "speed-index",
-              "budget": 1500
-            },
-            {
-              "metric": "largest-contentful-paint",
-              "budget": 1000
-            },
-            {
-              "metric": "cumulative-layout-shift",
-              "budget": 100
-            }
+          "metric": "speed-index",
+          "budget": 95
+        },
+        {
+          "metric": "largest-contentful-paint",
+          "budget": 2500
+        },
+        {
+          "metric": "cumulative-layout-shift",
+          "budget": 0.1
+        }
       ],
       "resourceSizes": [
         {
