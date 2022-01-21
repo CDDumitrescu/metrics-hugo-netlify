@@ -23,9 +23,11 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
       # Installs Hugo
-      - uses: peaceiris/actions-hugo@v2.4.13
+      - name: Install HUGO
+        uses: peaceiris/actions-hugo@v2.4.13
         with:
           extended: true
       # Run Hugo
@@ -34,5 +36,5 @@ jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
-      - name: Lighthouse Audit
-        uses: jakejarvis/lighthouse-action@v0.3.2
+      - name: Lighthouse CI Action
+        uses: treosh/lighthouse-ci-action@v8
