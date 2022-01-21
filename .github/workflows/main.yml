@@ -32,19 +32,20 @@ jobs:
       - name: Build HUGO site
         run: hugo
       # Wait for the Netlify preview
-      - name: Wait for the Netlify Preview
-        uses: jakepartusch/wait-for-netlify-action@v1
-        id: netlify
-        with:
-          site_name: 'adoring-blackwell-38249a'
+      # - name: Wait for the Netlify Preview
+      #   uses: jakepartusch/wait-for-netlify-action@v1
+      #   id: netlify
+      #   with:
+      #     site_name: 'adoring-blackwell-38249a'
       # Audit URLs using Lighthouse
       - name: Lighthouse CI Action
         uses: treosh/lighthouse-ci-action@v8
         with:
           urls: |
-            $ {{ steps.netlify.outputs.url }}
-            $ {{ steps.netlify.outputs.url }}/products/product-0/
-            # "https://adoring-blackwell-38249a.netlify.app//products/product-0/"
+            # $ {{ steps.netlify.outputs.url }}
+            # $ {{ steps.netlify.outputs.url }}/products/product-0/
+            "https://adoring-blackwell-38249a.netlify.app/"
+            "https://adoring-blackwell-38249a.netlify.app//products/product-0/"
           budgetPath: ./budget/json # test performance budgets
           uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to a temporary storage
