@@ -42,8 +42,6 @@ jobs:
         uses: treosh/lighthouse-ci-action@v8
         with:
           urls: |
-            # $ {{ steps.netlify.outputs.url }}
-            # $ {{ steps.netlify.outputs.url }}/products/product-0/
             https://adoring-blackwell-38249a.netlify.app/
             https://adoring-blackwell-38249a.netlify.app//products/product-0/
           budgetPath: ./budget/json # test performance budgets
