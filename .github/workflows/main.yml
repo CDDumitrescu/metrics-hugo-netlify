@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  Build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     steps:
@@ -31,13 +31,7 @@ jobs:
       # Run Hugo
       - name: Build HUGO site
         run: hugo
-      # Wait for the Netlify preview
-      # - name: Wait for the Netlify Preview
-      #   uses: jakepartusch/wait-for-netlify-action@v1
-      #   id: netlify
-      #   with:
-      #     site_name: 'adoring-blackwell-38249a'
-      # Audit URLs using Lighthouse
+      # Run Lighthouse Audit
       - name: Lighthouse CI Action
         uses: treosh/lighthouse-ci-action@v8
         with:
